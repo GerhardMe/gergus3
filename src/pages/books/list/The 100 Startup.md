@@ -2,11 +2,11 @@
 layout: ../../../layouts/book.astro
 title: The $100 Startup
 author: Chris Guillebeau
-read: 2020-07-27
+read: 2019-07-27
 year: 2012
-rating: 4
+rating: 3
 favorite: false
 cover: the_100_startup.jpg
 isbn: "9780307951526"
-blurb: A guide to building a business with minimal investment, featuring case studies of entrepreneurs who started successful companies with $100 or less and created new opportunities for themselves.
+blurb: Chris identified 1,500 individuals who have built businesses earning $50,000 or more from a modest investment (in many cases, $100 or less), and focused on the 50 most intriguing case studies. In nearly all cases, people with no special skills discovered aspects of their personal passions that could be monetized, and were able to restructure their lives in ways that gave them greater freedom and fulfillment.
 ---
