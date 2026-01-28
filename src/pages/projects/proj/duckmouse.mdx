@@ -3,12 +3,17 @@ layout: /src/layouts/article.astro
 title: Duckmouse
 date: 2022-08-23
 category: code
-image: /projects/duckmouse/closeup.webp
+image: closeup.webp
 ---
+
+import { Image } from 'astro:assets';
+import dinnerImg from '../../../assets/projects/duckmouse/dinner.webp';
+import websiteImg from '../../../assets/projects/duckmouse/website.png';
+import aLotImg from '../../../assets/projects/duckmouse/a_lot.png';
 
 At NTNU I joined a student organisation called [DotKom](https://wiki.online.ntnu.no/en/historie/dotkom/). There I met [Isak](https://isak.me/). One day Isak would tell me of a computer mouse he had found online. A mouse with a small compartment of oil with a small rubber duck floating inside. As you can see this mouse was perhaps the coolest computer mouse in the world. The only problem was however, that not only was it out of stock, but it was out of production as well. After some contemplating we realised that even though no one else was selling these mice, why couldn't we?
 
-![A nice dinner](/projects/duckmouse/dinner.webp)
+<Image src={dinnerImg} alt="A nice dinner" />
 
 ## Website
 
@@ -25,7 +30,7 @@ Or GRTT as the cool kids say. I did not become a huge fan of Gatsby, but it work
 
 We initially wanted to use Vipps for payment, but found it hard to set up as it required us to be an actual company if I remember correctly. We therefore decided on [Stripe](https://stripe.com/en-no) instead. Other than that, the development was relatively straightforward. The website is still up and running on [duckmouse.no](https://duckmouse.no/).
 
-![website](/projects/duckmouse/website.png)
+<Image src={websiteImg} alt="website" />
 
 ## Production
 
@@ -37,7 +42,7 @@ A big part of doing this project was learning about how one could go about selli
 
 Later that summer the boxes of computer mice appeared. When they arrived at the door we started to understand the true scope of what we had done. It turns out that five hundred of anything is rather a lot.
 
-![a lot](/projects/duckmouse/a_lot.png)
+<Image src={aLotImg} alt="a lot" />
 
 ## Sales
 

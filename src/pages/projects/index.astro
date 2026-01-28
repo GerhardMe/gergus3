@@ -3,7 +3,7 @@ import Layout from "../../layouts/default.astro";
 import List from "../../components/ObjList/ObjList.astro";
 import Article from "../../components/ObjList/Lists/Article.astro";
 import Title from "../../components/Title/Title.astro";
-const modules = import.meta.glob("./proj/*.md", { eager: true });
+const modules = import.meta.glob("./proj/*.{md,mdx}", { eager: true });
 const media = Object.values(modules);
 ---
 

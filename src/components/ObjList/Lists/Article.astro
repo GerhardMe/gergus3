@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 const { post } = Astro.props;
 function fm(p: any) {
   return p.frontmatter ?? p.data ?? {};
@@ -10,7 +12,21 @@ function fmtDate(d: string | Date) {
     return String(d ?? "");
   }
 }
+
+// Import all project images
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/projects/**/*.{png,jpg,jpeg,webp,avif}",
+  { eager: true },
+);
+
+// Map of project slugs to folder names (when they differ)
+const folderMap: Record<string, string> = {
+  koktailiusmaskinius: "koktailius",
+  mandelpage: "mandel",
+};
+
 const f = fm(post);
+
 // Get word count and calculate reading time (average 200 words per minute)
 const body = post.rawContent?.() ?? post.body ?? "";
 const wordCount = body.split(/\s+/).filter((w: string) => w.length > 0).length;
@@ -19,12 +35,30 @@ const readingTime = Math.max(1, Math.round(wordCount / 200));
 const title = f.title ?? post.slug ?? post.id ?? "";
 const firstChar = title.charAt(0).toUpperCase();
 const hasImage = !!f.image;
+
+// Resolve thumbnail image
+let thumbnailImage: ImageMetadata | null = null;
+if (f.image) {
+  const projectSlug = post.url?.split("/").filter(Boolean).pop() || "";
+  const folderName =
+    folderMap[projectSlug.toLowerCase()] || projectSlug.toLowerCase();
+  const imageKey = `/src/assets/projects/${folderName}/${f.image}`;
+  thumbnailImage = images[imageKey]?.default || null;
+}
 ---
 
 <a href={post.url} class="item">
   <div class="imgBox">
     {
-      hasImage ? (
+      thumbnailImage ? (
+        <Image
+          src={thumbnailImage}
+          alt={title}
+          width={416}
+          class="img"
+          loading="lazy"
+        />
+      ) : hasImage ? (
         <img class="img" src={f.image} loading="lazy" />
       ) : (
         <div class="initial">{firstChar}</div>

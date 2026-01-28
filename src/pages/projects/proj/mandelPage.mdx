@@ -3,8 +3,14 @@ layout: /src/layouts/article.astro
 title: mandel.page
 date: 2025-11-23
 category: code
-image: /projects/mandel/mandel.png
+image: mandel.png
 ---
+
+import { Image } from 'astro:assets';
+import defaultImg from '../../../assets/projects/mandel/default.png';
+import fractalImg from '../../../assets/projects/mandel/fractal.png';
+import redImg from '../../../assets/projects/mandel/red.png';
+import txtImg from '../../../assets/projects/mandel/txt.png';
 
 As 2025 was coming to an end and most of my friends were getting busy with exams, I needed a project. It had at this point been a fair while since I had made anything web based, and I wanted to freshen up on the technology and methodology. I had at that time developed an interest in fractals and the math behind them. I therefore thought it fitting to make a Mandelbrot explorer.
 
@@ -12,7 +18,7 @@ One of the main goals for the project was to explore AI systems as a tool in cod
 
 ## Plan
 
-![Image](/projects/mandel/default.png)
+<Image src={defaultImg} alt="Image" />
 
 This project I wanted to explore how to efficiently use AI systems while keeping performance and visual appeal good. I started off by using ChatGPT. I spent little time setting up an Astro project that rendered the Mandelbrot set. I got the AI to add pan and zoom controls, but that's about as far as the quick progress started to halt.
 
@@ -24,7 +30,7 @@ It's perhaps how I would imagine coding a project in a dream. Singular functions
 
 ## Architecture
 
-![Image](/projects/mandel/fractal.png)
+<Image src={fractalImg} alt="Image" />
 
 The first problem I ran into was zooming. ChatGPT wanted to use WebGL for rendering the fractal. Indeed an efficient method, but it does not itself allow for an arbitrarily deep zoom. The GPU shader works with floating point arithmetic, and at a relatively shallow depth the fractal started to disintegrate into larger pixels. I decided the best plan was rendering the fractal with the CPU using WebAssembly instead rather than using the GPU with WebGL.
 
@@ -53,12 +59,12 @@ To sum up this was the full system:
 
 ## Reflections
 
-![Image](/projects/mandel/red.png)
+<Image src={redImg} alt="Image" />
 
 The point of the project was neither speed nor code quality. It was to create a super fun good looking page in the shortest amount of time using AI tools. It's quite a lot smaller than some of the other projects I have done, but I am happy with the end result, and I really liked the challenge.
 
 I also found that Claude is much better at coding than ChatGPT and I will be using Claude in future projects. Generally AI is an awesome tool, but I find it simple to overuse it. I often found myself spending hours on trying to explain to Claude how to fix some bug instead of just doing it myself. Generally handing the AI smaller isolated tasks worked the best, while architecture, styling and complex functionality was best done myself.
 
-![Image](/projects/mandel/txt.png)
+<Image src={txtImg} alt="Image" />
 
 I really recommend taking the [website](https://mandel.page) for a spin. All windows are draggable, can be minimized and can be reopened via the small links in the bottom right. There you can also find the question mark displaying the text. Apart from a few bugs and not being optimized for mobile, I do believe the project to be a success!
