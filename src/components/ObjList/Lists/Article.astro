@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import { readFile } from "node:fs/promises";
 
 const { post } = Astro.props;
 function fm(p: any) {
@@ -28,8 +29,23 @@ const folderMap: Record<string, string> = {
 const f = fm(post);
 
 // Get word count and calculate reading time (average 200 words per minute)
-const body = post.rawContent?.() ?? post.body ?? "";
-const wordCount = body.split(/\s+/).filter((w: string) => w.length > 0).length;
+const raw = (await readFile(post.file, "utf-8")) ?? post.body ?? "";
+const content = raw
+  // remove frontmatter
+  .replace(/^---[\s\S]*?---/, "")
+  // remove MDX imports / exports
+  .replace(/^(import|export)\s.+$/gm, "")
+  // remove HTML / JSX tags
+  .replace(/<[^>]+>/g, " ")
+  // remove markdown images ![alt](src)
+  .replace(/!\[[^\]]*\]\([^)]+\)/g, " ")
+  // normalize whitespace
+  .replace(/\s+/g, " ")
+  .trim();
+
+const wordCount = content
+  .split(/\s+/)
+  .filter((w: string) => w.length > 0).length;
 const readingTime = Math.max(1, Math.round(wordCount / 200));
 
 const title = f.title ?? post.slug ?? post.id ?? "";
