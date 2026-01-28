@@ -2,11 +2,11 @@
 layout: ../../../layouts/book.astro
 title: To Kill a Mockingbird
 author: Harper Lee
-read: 2020-06-06
+read: 2024-07-12
 year: 1960
 rating: 2
 favorite: false
 cover: to_kill_a_mockingbird.jpg
-isbn: "9780061120084"
-blurb: A novel set in the American South during the 1930s, following young Scout Finch as her father, a lawyer, defends a Black man falsely accused of rape, exploring themes of racial injustice and moral growth.
+isbn: 9780061120084
+blurb: To Kill a Mockingbird is a 1960 Southern Gothic novel by American author Harper Lee. It became instantly successful after its release in the United States. To Kill a Mockingbird won the Pulitzer Prize a year after its release, and it has become a classic of modern American literature. The plot and characters are loosely based on Lee's observations of her family, her neighbors and an event that occurred near her hometown of Monroeville, Alabama, in 1936, when she was ten.
 ---

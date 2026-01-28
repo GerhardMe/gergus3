@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Image, type ImageMetadata } from "astro:assets";
 
 const { post } = Astro.props;
 
@@ -17,13 +17,13 @@ function fmtDate(d: string | Date) {
 
 function stars(n: any) {
   const v = Math.max(0, Math.min(5, Number(n) || 0));
-  return "★★★★★☆☆☆☆☆".slice(5 - v, 10 - v);
+  return { filled: "★".repeat(v), empty: "★".repeat(5 - v) };
 }
 
 // Import all cover images
 const images = import.meta.glob(
   "/src/assets/covers/*.{png,jpg,jpeg,webp,avif}",
-  { eager: true }
+  { eager: true },
 );
 
 const f = fm(post);
@@ -32,7 +32,9 @@ const f = fm(post);
 const coverFilename = f.cover;
 const coverKey = coverFilename ? `/src/assets/covers/${coverFilename}` : null;
 const coverImage =
-  coverKey && images[coverKey] ? images[coverKey].default : null;
+  coverKey && images[coverKey]
+    ? (images[coverKey] as { default: ImageMetadata }).default
+    : null;
 ---
 
 <a href={post.url} class="book-item">
@@ -58,8 +60,12 @@ const coverImage =
     </div>
   </div>
   <div class="right">
-    <div class="read">read: {fmtDate(f.read)}</div>
-    <div class="rating">{stars(f.rating)}</div>
+    <div class="read">{fmtDate(f.read)}</div>
+    <div class="rating">
+      <span class="stars-filled">{stars(f.rating).filled}</span><span
+        class="stars-empty">{stars(f.rating).empty}</span
+      >
+    </div>
   </div>
 </a>
 
@@ -124,9 +130,16 @@ const coverImage =
   }
 
   .rating {
-    color: var(--color-gold);
-    text-shadow: 0 0 0.1em var(--color-shadow);
     text-align: right;
+  }
+
+  .stars-filled {
+    color: var(--color-gold);
+    text-shadow: 0 0 0.05em var(--color-shadow);
+  }
+
+  .stars-empty {
+    color: var(--color-backdrop);
   }
   @media (max-width: 650px) {
     .cover {

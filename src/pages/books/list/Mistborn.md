@@ -4,7 +4,7 @@ title: Mistborn (Era One)
 author: Brandon Sanderson
 read: 2024-11-18
 year: 2008
-rating: 4
+rating: 5
 favorite: false
 cover: mistborn.jpg
 isbn: "9780765350381"
