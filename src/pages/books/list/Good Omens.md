@@ -2,7 +2,7 @@
 layout: ../../../layouts/book.astro
 title: Good Omens
 author: Terry Pratchett
-read: 2026-01-29
+read: 2026-01-28
 year: 1990
 rating: 2
 favorite: false
