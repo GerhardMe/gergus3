@@ -8,5 +8,5 @@ rating: 4
 favorite: false
 cover: an_introduction_to_political_philosophy.jpg
 isbn: "9780199658015"
-blurb: An accessible introduction to the central questions of political philosophy, exploring topics like liberty, equality, democracy, and justice through clear explanations and real-world examples.
+blurb: This book serves as an introductory text to political philosophy, highlighting the relevance of classical political thinkers in addressing contemporary political issues. It provides a comprehensive overview of key concepts, theories, and debates in the field, aiming to engage both students and general readers. The revised edition includes updates to the Guide for Further Reading and minor corrections to enhance clarity and accuracy.
 ---
