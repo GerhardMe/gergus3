@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: Sofies verden
 author: Jostein Gaarder
-read:
+read: 2011-01-01
 year: 1991
 rating: 2
 favorite: false
