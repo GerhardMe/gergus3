@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: Brand
 author: Henrik Ibsen
-read: 2020-06-06
+read:
 year: 1865
 rating: 5
 favorite: false

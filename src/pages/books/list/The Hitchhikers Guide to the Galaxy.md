@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: The Hitchhiker's Guide to the Galaxy
 author: Douglas Adams
-read: 2020-06-06
+read:
 year: 1979
 rating: 5
 favorite: false

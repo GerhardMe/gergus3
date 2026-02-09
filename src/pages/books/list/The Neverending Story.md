@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: The Neverending Story
 author: Michael Ende
-read: 2020-06-06
+read:
 year: 1979
 rating: 4
 favorite: false

@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: The Hobbit
 author: J.R.R. Tolkien
-read: 2020-06-06
+read:
 year: 1937
 rating: 3
 favorite: false

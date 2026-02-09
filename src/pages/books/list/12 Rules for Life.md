@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: 12 Rules for Life
 author: Jordan B. Peterson
-read: 2020-06-06
+read:
 year: 2018
 rating: 2
 favorite: false

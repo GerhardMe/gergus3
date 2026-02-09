@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: The Name of the Wind
 author: Patrick Rothfuss
-read: 2020-06-06
+read:
 year: 2007
 rating: 5
 favorite: false

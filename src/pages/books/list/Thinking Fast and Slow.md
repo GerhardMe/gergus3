@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: Thinking, Fast and Slow
 author: Daniel Kahneman
-read: 2020-06-06
+read:
 year: 2011
 rating: 3
 favorite: false

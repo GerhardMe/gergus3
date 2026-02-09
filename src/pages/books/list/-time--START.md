@@ -1,6 +1,6 @@
 ---
-title: UNG-Skole
-read: 2013-08-12
+title: START
+read: 2000-01-01
 favorite: false
 cover: black.jpg
 draft: true

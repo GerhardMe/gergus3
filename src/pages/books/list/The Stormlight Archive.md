@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: The Stormlight Archive (Series)
 author: Brandon Sanderson
-read: 2020-06-06
+read:
 year: 2010
 rating: 4
 favorite: false

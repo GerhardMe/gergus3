@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: The $100 Startup
 author: Chris Guillebeau
-read: 2019-07-27
+read: 2014-05-11
 year: 2012
 rating: 2
 favorite: false

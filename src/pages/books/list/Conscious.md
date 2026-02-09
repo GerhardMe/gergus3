@@ -1,5 +1,4 @@
 ---
-draft: true
 layout: ../../../layouts/book.astro
 title: Conscious
 author: Annaka Harris

@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: Sapiens
 author: Yuval Noah Harari
-read: 2020-06-06
+read:
 year: 2011
 rating: 5
 favorite: false

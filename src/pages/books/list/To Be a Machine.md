@@ -3,7 +3,7 @@ draft: true
 layout: ../../../layouts/book.astro
 title: To Be a Machine
 author: Mark O'Connell
-read: 2020-06-06
+read:
 year: 2017
 rating: 3
 favorite: false

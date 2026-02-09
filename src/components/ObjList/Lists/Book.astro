@@ -27,6 +27,7 @@ const images = import.meta.glob(
 );
 
 const f = fm(post);
+const isDraft = import.meta.env.DEV && f.draft;
 
 // Match cover filename to imported image
 const coverFilename = f.cover;
@@ -54,7 +55,7 @@ const coverImage =
       )
     }
     <div class="info">
-      <div class="book-title">{f.title ?? post.slug ?? post.id}</div>
+      <div class:list={["book-title", { draft: isDraft }]}>{f.title ?? post.slug ?? post.id}</div>
       <div class="author">by {f.author}</div>
       <div class="year">({f.year})</div>
     </div>
@@ -111,6 +112,10 @@ const coverImage =
     color: var(--color-accent);
 
     font-family: "Times New Roman", Times, serif;
+  }
+
+  .book-title.draft {
+    color: var(--color-error);
   }
 
   .author {
