@@ -4,7 +4,7 @@ title: An Introduction to Political Philosophy
 author: Jonathan Wolff
 read: 2020-06-14
 year: 1996
-rating: 4
+rating: 5
 favorite: false
 cover: an_introduction_to_political_philosophy.jpg
 isbn: "9780199658015"
