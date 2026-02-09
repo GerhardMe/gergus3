@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: Thinking, Fast and Slow
 author: Daniel Kahneman

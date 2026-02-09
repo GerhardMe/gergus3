@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: Brave New World
 author: Aldous Huxley

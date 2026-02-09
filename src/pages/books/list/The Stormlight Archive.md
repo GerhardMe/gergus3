@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: The Stormlight Archive (Series)
 author: Brandon Sanderson

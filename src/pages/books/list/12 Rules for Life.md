@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: 12 Rules for Life
 author: Jordan B. Peterson

@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: How to Win Friends & Influence People
 author: Dale Carnegie

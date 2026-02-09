@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: Kunsten å lese tanker
 author: Henrik Fexeus

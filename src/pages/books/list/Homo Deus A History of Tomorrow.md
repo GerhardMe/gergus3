@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: Homo Deus
 author: Yuval Noah Harari

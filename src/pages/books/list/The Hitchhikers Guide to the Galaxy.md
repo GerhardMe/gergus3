@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: The Hitchhiker's Guide to the Galaxy
 author: Douglas Adams

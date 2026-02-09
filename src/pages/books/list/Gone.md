@@ -1,9 +1,9 @@
 ---
 draft: true
 layout: ../../../layouts/book.astro
-title: Eragon
+title: Gone
 author: Christopher Paolini
-read: 2013-01-01
+read: 2015-01-01
 year: 2002
 rating: 1
 favorite: false

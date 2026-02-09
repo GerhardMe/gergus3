@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: Mengele Zoo
 author: Gert Nygårdshaug

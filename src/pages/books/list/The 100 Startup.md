@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: The $100 Startup
 author: Chris Guillebeau

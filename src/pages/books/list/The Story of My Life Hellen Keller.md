@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: The Story of My Life Hellen Keller
 author: Helen Keller

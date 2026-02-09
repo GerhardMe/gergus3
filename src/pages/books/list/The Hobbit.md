@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../../layouts/book.astro
 title: The Hobbit
 author: J.R.R. Tolkien
