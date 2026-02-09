@@ -2,7 +2,7 @@
 layout: ../../../layouts/book.astro
 title: The Story of My Life Hellen Keller
 author: Helen Keller
-read: 2014-01-01
+read: 2013-01-01
 year: 1903
 rating: 5
 favorite: false
@@ -13,4 +13,4 @@ blurb: The Story of My Life, is an autobiography written by Helen Keller and pub
 
 ### Review
 
-I read this a long time ago, so it's rather telling that I still remember it so well. I remember reading about the first time she understood touch language while touching flowing water. I find it fascinating how she describes herself running around to learn the name of everything, as though she had been waiting for a language all her life. I find it remarkable that, born deaf and blind, the human mind still breaks free, and in her case has the ability to touch millions.
+I read this a long time ago, so it's rather telling that I still remember it so well. I remember reading about the first time she understood tactile language while touching flowing water. I find it fascinating how she describes herself running around to learn the name of everything, as though she had been waiting for a language all her life. I find it remarkable that, born deaf and blind, the human mind still breaks free, and in her case has the ability to touch millions.

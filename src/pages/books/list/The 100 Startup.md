@@ -4,7 +4,7 @@ title: The $100 Startup
 author: Chris Guillebeau
 read: 2019-07-27
 year: 2012
-rating: 3
+rating: 2
 favorite: false
 cover: the_100_startup.jpg
 isbn: "9780307951526"
