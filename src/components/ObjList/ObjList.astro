@@ -8,11 +8,14 @@ interface Props {
   Item: any; // Component that renders a single item
 }
 
-const { media, groupBy = ["read"], favorites = false, Item } = Astro.props;
+const { media: rawMedia, groupBy = ["read"], favorites = false, Item } = Astro.props;
 
 function fm(post: any) {
   return post.frontmatter ?? post.data ?? {};
 }
+
+// Filter out drafts (but show them in development)
+const media = rawMedia.filter((post: any) => import.meta.env.DEV || !fm(post).draft);
 
 function isDateValue(val: any) {
   if (val == null || val === "") return false;
