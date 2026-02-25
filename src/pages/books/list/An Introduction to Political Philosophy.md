@@ -2,7 +2,7 @@
 layout: ../../../layouts/book.astro
 title: An Introduction to Political Philosophy
 author: Jonathan Wolff
-read: 2020-06-14
+read: 2019-11-14
 year: 1996
 rating: 5
 favorite: false
