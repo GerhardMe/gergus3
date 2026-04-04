@@ -2,7 +2,7 @@
 layout: ../../../layouts/book.astro
 title: 12 Rules for Life
 author: Jordan B. Peterson
-read: 2019-07-02
+read: 2018-07-02
 year: 2018
 rating: 2
 favorite: false
@@ -13,6 +13,6 @@ blurb: 12 Rules for Life is a 2018 self-help book by the Canadian clinical psych
 
 ### Rewiew
 
-After having followed his web lectures of his Maps of Meaning course, I found this book deeply unsatisfying and uninteresting. Hard to divide politics from genuine academic assessment in the case of Peterson, but I believe I can say his lectures were a lot more interesting for me. The book takes some parts of the lectures and distills them into self-help tips. Sometimes great, and sometimes a bit awkwardly. I do find the broader questions he wrestles with in the lectures more entertaining, and also much more honest. Would recommend the lectures warmly and the book not so much.
+After having followed his web lectures of his Maps of Meaning course, I found this book unsatisfying. Hard to divide politics from a genuine assessment in the case of Peterson, but I believe I can say his lectures were a lot more interesting for me. The book takes some parts of the lectures and distills them into self-help tips. Sometimes great, and sometimes a bit awkwardly. I do find the broader questions he wrestles with in the lectures more entertaining, and also much more honest. Would recommend the lectures warmly and the book not so much.
 
 [Yutube Lectures link](https://www.youtube.com/watch?v=4tQOlQRp3gQ&list=PL22J3VaeABQCn5nTAx65NRlh1EsKD0UQD)
