@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # guestbook data
 backend/data/
+
+# claude code
+.claude/
